@@ -3,6 +3,7 @@
 <head>
   <link rel="icon" href="/Media/Pictures/719179.png">
   <link rel="stylesheet" href="index.css">
+  <script src="main.js" defer></script>
   <title>Login</title>
 </head>
 <body>
@@ -12,25 +13,25 @@
         <div class="form-box">
             <div class="form-value">
                 <form action="">
-                    <h2>Login</h2> <pre>                   Attendace System</pre>
+                    <h2>Login</h2> <pre>                   Attendance System</pre>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label for="">Email</label>
+                        <input id="email" type="email" required>
+                        <label for="email">Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
-                        <label for="">Password</label>
+                        <input id="password" type="password" required>
+                        <label for="password">Password</label>
                     </div>
                     <div class="forget">
                         <label for=""><input type="checkbox">Admin/Professor  </label>
-                        <pr><a href="#">Forget Password</a></pr>
+                        <pr><a href="#">Forgot Password?</a></pr>
                       
                     </div>
-                    <a href=""><button><span></span>Log in</button></a>
+                  <button id="loginBtn"><a href="home/index.html"><span></span>Login</a></button>
                     <div class="register">
-                        <p>Don't have a account <a href="">Register</a></p>
+                        <p>Don't have an account? <a href="">Register</a></p>
                     </div>
                 </form>
             </div>
