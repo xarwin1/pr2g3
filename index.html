@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="lpstyle.css">
-  <script src="main.js" defer></script>
+  <link href="assets/images/favicon.png" rel="icon" type="image/x-icon">
+  <link href="lpstyle.css" rel="stylesheet">
+  <script defer src="main.js"></script>
   <title>Login</title>
 </head>
 <body>
-    <section>
-        <div class="wrapper">
-            <a href=""><img  class=logo src="assets/images/info.png" alt="logo"></a>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Login</h2> <pre>                   Attendance System</pre>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input id="email" type="email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input id="password" type="password" required>
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="forget">
-                        <label for=""><input type="checkbox">Admin/Professor  </label>
-                        <pr><a href="#">Forgot Password?</a></pr>
-                      
-                    </div>
-                  <button id="loginBtn"><a href="homepage.html"><span></span>Login</a></button>
-                    <div class="register">
-                        <p>Don't have an account? <a href="register.html">Register</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-        </div>
-    </section>
-    <div class="bottom">
-        <a href="#" title="questions?"><p class="qa"> Technical Problems?</p></a>
+<section>
+  <div class="wrapper">
+    <a href=""><img alt="logo" class=logo src="assets/images/info.png"></a>
+    <div class="form-box">
+      <div class="form-value">
+        <form action="">
+          <h2>Login</h2>
+          <pre>                   Attendance System</pre>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input id="email" required type="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input id="password" required type="password">
+            <label for="password">Password</label>
+          </div>
+          <div class="forget">
+            <label for="profCheck"><input id="profCheck" type="checkbox">Admin/Professor </label>
+            <pr><a href="#">Forgot Password?</a></pr>
+
+          </div>
+          <button id="loginBtn"><a href="homepage.html"><span></span>Login</a></button>
+          <div class="register">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+          </div>
+        </form>
+      </div>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+</section>
+<div class="bottom">
+  <a href="#" title="questions?"><p class="qa"> Technical Problems?</p></a>
+</div>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
