@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<div id="qrcode"></div>
+<br>
+<form action="/" id="form">
+  <input type="text" name="name-input" id="name-input" placeholder="name">
+  <br>
+  <input type="date" name="date" id="date">
+  <input type="submit" value="Generate">
+
+  <p><strong>Note</strong>:The generation of qrcode is automated in "actual release" this is just a prototype </p>
+</form>
+
+</body>
+<script>
+    let date = document.getElementById("date");
+  let input = document.getElementById("name-input");
+  let form = document.getElementById("form");
+
+  let qrcode;
+
+  function generate(qrOutput) {
+      return new QRCode("qrcode", {text: qrOutput});
+  }
+
+  form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      let qrOutput = input.value + " " + date.value;
+
+      if (qrcode == null) {
+          qrcode = generate(qrOutput);
+      }
+      else {
+          qrcode.makeCode(qrOutput);
+      }
+  })
+</script>
+</html>

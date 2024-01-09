@@ -6,6 +6,7 @@
   <link href="hpstyle.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
 </head>
 <body>
 <section class="home">
@@ -25,8 +26,9 @@
       Welcome to Informatics Attendance System. Please check your email or MS Teams <br>
       for an updated QR code available during this day. Thank you!
       <div>
-        <button type="button"><span></span>ATTENDANCE</button>
+        <button type="button" id="genQR" onclick="window.open('./qrcode.html')"><span></span>ATTENDANCE</button>
         <button type="button"><span></span>ACCOUNT</button>
+        <div id="qrcode"></div>
 
       </div>
     </div>
@@ -88,5 +90,6 @@
   </div>
 
 </section>
+
 </body>
 </html>
