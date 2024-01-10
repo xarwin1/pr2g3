@@ -22,13 +22,11 @@
       </ul>
     </div>
     <div class="content">
-      <h1> GREETINGS {student.name}</h1>
-      Welcome to Informatics Attendance System. Please check your email or MS Teams <br>
-      for an updated QR code available during this day. Thank you!
+      <h1> GREETINGS, {student.name}</h1>
+      Please press the button below to generate your QR Code
       <div>
-        <button type="button" id="genQR" onclick="window.open('./qrcode.html')"><span></span>ATTENDANCE</button>
-        <button type="button"><span></span>ACCOUNT</button>
-        <div id="qrcode"></div>
+        <button type="button" id="genQR" onclick="window.open('./qrcode.html')"><span></span>GENERATE</button>
+
 
       </div>
     </div>

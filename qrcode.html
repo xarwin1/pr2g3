@@ -3,43 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>QR Code</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+  <link rel="stylesheet" href="qrstyle.css">
+  <link href="hpstyle.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 <body>
 
-<div id="qrcode"></div>
-<br>
-<form action="/" id="form">
-  <input type="text" name="name-input" id="name-input" placeholder="name">
-  <br>
-  <input type="date" name="date" id="date">
-  <input type="submit" value="Generate">
+  <section class="home">
+    <div class="banner">
+      <div class="navbar">
+        <img alt="informatics school logo" class="Logo" src="assets/images/informatixs.png">
+        <ul>
+          <li><a href="./studHomepage.html">Home</a></li>
+          <li><a href="#">Attendance</a></li>
+          <li><a href="#">Scan</a></li>
+          <li><a href="#">Sheets</a></li>
+          <li><a href="#">Announcements</a></li>
+        </ul>
+        </div>
+      </div>
+    </section>
+    <div class="qrcode-placeholder">
+      <div id="qrcode"></div>
+      <p class="note"><strong>Note</strong>: The value of QR Code below is just a sample only. This is just a concept.</p>
+    </div>
 
-  <p><strong>Note</strong>:The generation of qrcode is automated in "actual release" this is just a prototype </p>
-</form>
 
 </body>
 <script>
-    let date = document.getElementById("date");
-  let input = document.getElementById("name-input");
-  let form = document.getElementById("form");
-
-  let qrcode;
-
-  function generate(qrOutput) {
-      return new QRCode("qrcode", {text: qrOutput});
-  }
-
-  form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      let qrOutput = input.value + " " + date.value;
-
-      if (qrcode == null) {
-          qrcode = generate(qrOutput);
-      }
-      else {
-          qrcode.makeCode(qrOutput);
-      }
-  })
+  let qrcodegen= new QRCode("qrcode", "https://ion.informatics.edu.ph");
 </script>
 </html>
