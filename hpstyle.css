@@ -211,3 +211,9 @@ h3 {
     bottom: 150px;
     opacity: 1;
 }
+
+.noaccess {
+    opacity: 0.3;
+}
+
+

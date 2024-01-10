@@ -13,24 +13,26 @@
     <div class="navbar">
       <img alt="informatics school logo" class="Logo" src="assets/images/informatixs.png">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Attendance</a></li>
-        <li><a href="#">Scan</a></li>
+        <li><a href="profHomepage.html">Home</a></li>
+        <li><a href="#">Attendance Log</a></li>
+        <li><a href="./qrscan.html">Scan</a></li>
       </ul>
     </div>
     <div class="content">
       <h1> GREETINGS {professor.name}</h1>
-      Welcome to Informatics Attendance System. Please check your email or MS Teams <br>
-      for an updated QR code available during this day. Thank you!
+      Please press the corresponding button for designated tasks.
       <div>
         <button type="button" onclick="window.open('./qrscan.html')"><span></span>SCAN QR</button>
+        <button type="button"><span></span>CHECK ATTENDANCE</button>
+        <button type="button"><span></span>EXPORT TO EXCEL</button>
 
       </div>
     </div>
   </div>
 </section>
+
 <!-- Scanqr-->
-<section class="modes">
+<!--<section class="modes">
   <div class="scanqr">
     <h1>ATTENDANCE SELECTIONS</h1>
     <p>Please choose your selected modes to get your attendance.</p>
@@ -43,16 +45,16 @@
           connected with this account
         </p>
       </div>
-      <div class="att">
-        <h3>AUTOMATED</h3>
+      <div class="att noaccess">
+        <h3>AUTOMATED </h3>
         <p>
-          With just one click u can get your attendance automatically.
+          With just one click you can get your attendance automatically.
           When you use this feature make sure that your teachers attendance
           mode is set to automatic. Also, don't forget to register your
           teachers account to you device.
         </p>
       </div>
-      <div class="att">
+      <div class="att noaccess">
         <h3>EXCEL</h3>
         <p> This feature allows you to directly record your attendance using excel.
           You can only use this feature if the teacher permits you to do so.
@@ -72,12 +74,12 @@
       <div class="layer"><h3> NORTHGATE</h3>
       </div>
     </div>
-    <div class="campuses">
+    <div class="campuses noaccess">
       <img alt="" src="assets/images/Manila.png">
       <div class="layer"><h3> MANILA</h3>
       </div>
     </div>
-    <div class="campuses">
+    <div class="campuses noaccess" >
       <img alt="" src="assets/images/Caloocan.png">
       <div class="layer"><h3> CALOOCAN</h3>
       </div>
@@ -85,6 +87,7 @@
   </div>
 
 
-</section>
+</section>-->
+
 </body>
 </html>
